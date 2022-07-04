@@ -69,6 +69,35 @@ public class TestPerson {
     }
 
     @Test
+    public void testSetPet() {
+        // Given
+        Person person = new Person();
+        String expected = "Lucky";
+
+        // When
+        person.setPet(expected);
+        String actual = person.getPet();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSethairColor() {
+        // Given
+        Person person = new Person();
+        String expected = "Pink";
+
+        // When
+        person.setHairColor(expected);
+
+        // Then
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+
+
+    @Test
     public void testSetName() {
         // Given
         Person person = new Person();
